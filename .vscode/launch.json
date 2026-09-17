@@ -1,0 +1,74 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "LED: interfaccia grafica",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/led_gui.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: elenca telecamere",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/led_test.py",
+      "args": [
+        "list"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: seleziona ROI",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/led_test.py",
+      "args": [
+        "roi",
+        "--cam",
+        "0"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: live",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/led_test.py",
+      "args": [
+        "live",
+        "--leds",
+        "8"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: test",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/led_test.py",
+      "args": [
+        "test",
+        "--leds",
+        "8",
+        "--expect-all",
+        "G"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: selftest (senza telecamera)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/selftest.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LED: selftest GUI (senza telecamera)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/selftest_gui.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

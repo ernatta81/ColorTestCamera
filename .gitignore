@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+config.json
+led_*.png
+report*.json
+selftest_fail_*.png
