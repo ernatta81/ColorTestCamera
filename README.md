@@ -168,7 +168,7 @@ zone, la selezione, lo spostamento, l'eliminazione e l'esecuzione del test:
 .venv\Scripts\python.exe selftest_gui.py
 ```
 
-## Note di banco (contano più del codice)
+## Note di banco
 
 - **Blocca esposizione e bilanciamento del bianco.** Se la webcam li regola da
   sola, lo stesso LED misura colori diversi da un frame all'altro. Il programma
